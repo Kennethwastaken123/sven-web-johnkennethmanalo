@@ -1,4 +1,6 @@
-# Pet Grooming Website and Appointment
+#  PAWTASTIC – Pet Walking Services Website
+
+PAWTASTIC is a pet walking services website designed to provide the best care for your furry friends. Our platform allows pet owners to easily book appointments and enjoy premium services, ensuring their pets are happy and well taken care of.
 
 This project is a Laravel 10 application using Breeze for authentication, Alpine.js for interactivity, and Tailwind CSS for styling.
 
@@ -48,42 +50,6 @@ Make sure you have the following installed:
    ```sh
    php artisan serve
    ```
-   The application should be available at `http://127.0.0.1:8000`
-
-## Breeze Authentication Setup
-Breeze provides simple authentication scaffolding using Blade templates, Alpine.js, and Tailwind CSS.
-
-1. **Install Laravel Breeze:**
-   ```sh
-   composer require laravel/breeze --dev
-   ```
-2. **Install Breeze UI:**
-   ```sh
-   php artisan breeze:install
-   ```
-   - Choose the stack: `blade`
-3. **Run migrations again if needed:**
-   ```sh
-   php artisan migrate
-   ```
-4. **Build assets:**
-   ```sh
-   npm install && npm run dev
-   ```
-
-## Additional Commands
-
-- To run tests:
-  ```sh
-  php artisan test
-  ```
-- To clear cache:
-  ```sh
-  php artisan cache:clear
-  php artisan config:clear
-  php artisan route:clear
-  php artisan view:clear
-  ```
 
 ## License
 This project is open-source and available under the MIT license.
