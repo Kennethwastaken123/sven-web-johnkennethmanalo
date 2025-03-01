@@ -15,7 +15,6 @@ Make sure you have the following installed:
 1. **Clone the repository:**
    ```sh
    git clone <repository-url>
-   cd <project-directory>
    ```
 
 2. **Install dependencies:**
