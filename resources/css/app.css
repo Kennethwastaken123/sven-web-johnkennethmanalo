@@ -7,7 +7,104 @@ a {
     font-size: 18px;
 }
 
-
 section {
     height: 100vh;
+}
+
+.nav a {
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+}
+
+input, select, textarea {
+    font-size: 1rem; /* Increase readability */
+    padding: 10px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+.times-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+    gap: 10px; /* Adds space between buttons */
+    justify-content: center; /* Center items on mobile */
+}
+
+.time-option {
+    flex: 1; /* Makes all options equal width */
+    min-width: 120px; /* Ensures minimum width */
+    max-width: 200px; /* Prevents too wide buttons */
+}
+
+.time-label {
+    display: block;
+    padding: 12px 24px;
+    background-color: white;
+    color: #374151; /* Gray-700 */
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.peer:checked + .time-label {
+    background-color: #4b5563; /* Gray-600 */
+    color: white;
+}
+
+/* Desktop: Keep in one row */
+@media (min-width: 768px) {
+    .times-container {
+        flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+        justify-content: flex-start; /* Align items to the left */
+    }
+}
+@media (max-width: 768px) {
+    input, select, textarea {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem; /* Reduce font size */
+        text-align: center;
+    }
+
+    .hero a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .nav.open {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
 }

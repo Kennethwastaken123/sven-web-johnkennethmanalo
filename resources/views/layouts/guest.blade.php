@@ -30,8 +30,8 @@
                     </a>
 
                     <ul class="hidden md:flex space-x-8 animate-fade-in">
-                        <li><a x-on:click="scrollToSection('about-us')"  class="text-black hover:text-gray-300 drop-shadow-lg">About us</a></li>
-                        <li><a x-on:click="scrollToSection('schedule-us')" class="text-black hover:text-gray-300 drop-shadow-lg">Schedule a visit</a></li>
+                        <li><a x-on:click="scrollToSection('about-us')"  class="text-white hover:text-gray-300 drop-shadow-lg">About us</a></li>
+                        <li><a x-on:click="scrollToSection('schedule-us')" class="text-white hover:text-gray-300 drop-shadow-lg">Schedule a visit</a></li>
                     </ul>
 
                     <button @click="open = !open" class="md:hidden text-white focus:outline-none">
@@ -41,11 +41,12 @@
                         </svg>
                     </button>
 
-                    <div x-show="open" x-transition :class="{'nav': true, 'open': open}"
-                        class="md:hidden absolute bg-opacity-80 w-full left-0 top-16 text-white flex flex-col items-center space-y-4 py-4 ">
+                    <div x-show="open" x-transition
+                        class="md:hidden absolute bg-transparent w-full left-0 top-16 text-black flex flex-col items-center space-y-4 py-4">
                         <a x-on:click="scrollToSection('about-us')" class="hover:text-blue-300">About us</a>
                         <a x-on:click="scrollToSection('schedule-us')" class="hover:text-blue-300">Schedule a visit</a>
                     </div>
+
                 </div>
             </nav>
             <div>
