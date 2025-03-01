@@ -30,17 +30,12 @@ Make sure you have the following installed:
    ```
    - Update database configurations in `.env`
 
-4. **Generate application key:**
-   ```sh
-   php artisan key:generate
-   ```
-
-5. **Run migrations:**
+4. **Run migrations:**
    ```sh
    php artisan migrate
    ```
 
-6. **Install and build front-end assets:**
+5. **Install and build front-end assets:**
    ```sh
    npm run dev
    ```
@@ -49,7 +44,7 @@ Make sure you have the following installed:
    npm run build
    ```
 
-7. **Run the application:**
+6. **Run the application:**
    ```sh
    php artisan serve
    ```
