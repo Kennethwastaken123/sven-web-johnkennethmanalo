@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\GroomingAppointment;
+use App\Models\ScheduleAppointments;
 
 class ScheduleController extends Controller
 {
@@ -23,7 +23,7 @@ class ScheduleController extends Controller
             $days = json_encode($request->input('times'));
             $times = json_encode($request->input('days'));
 
-            GroomingAppointment::create([
+            ScheduleAppointments::create([
                 'date_start'          => $request->date,
                 'frequency'          => $request->frequency,
                 'times'          => $times,
